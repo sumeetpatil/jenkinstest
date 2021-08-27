@@ -26,10 +26,6 @@ pipeline {
            steps {
                sh "cd test && git --version"
                jacoco(
-                    execPattern: '**/target/**.exec',
-                    classPattern: '**/target/classes',
-                    sourcePattern: '**/src',
-                    inclusionPattern: 'com/sumeet/**',
                     changeBuildStatus: true,
                     minimumInstructionCoverage: '30',
                     maximumInstructionCoverage: '80')
