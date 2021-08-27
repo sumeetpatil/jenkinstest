@@ -24,7 +24,7 @@ pipeline {
         }
         stage("Code coverage") {
            steps {
-               sh "cd test"
+               sh "cd test && git --version"
                jacoco(
                     execPattern: '**/target/**.exec',
                     classPattern: '**/target/classes',
