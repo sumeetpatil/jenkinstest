@@ -29,7 +29,7 @@ pipeline {
                     execPattern: '**/target/**.exec',
                     classPattern: '**/target/classes',
                     sourcePattern: '**/src',
-                    inclusionPattern: 'com/iamvickyav/**',
+                    inclusionPattern: 'com/sumeet/**',
                     changeBuildStatus: true,
                     minimumInstructionCoverage: '30',
                     maximumInstructionCoverage: '80')
